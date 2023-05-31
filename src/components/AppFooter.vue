@@ -1,5 +1,6 @@
 <script>
 export default {
+    props: ['foo'],
     components: {
         name: "AppFooter",
     },
