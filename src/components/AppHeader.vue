@@ -3,7 +3,7 @@ import {store} from "./data/store";
 export default{
     props: {
         navList: Array,
-        logo: String
+        Logo: String
     },
     components: {
         name: 'AppHeader',
@@ -13,6 +13,11 @@ export default{
             store
         }
     },
+    methods: {
+        getImagePath(imgPath) {
+            return new URL(imgPath, import.meta.url).href;
+        }
+    }
 }
 </script>
 
@@ -28,8 +33,7 @@ export default{
             </div>
         </section>
         <nav>
-            <img src="../assets/images/logo/mt-2236-home-logo.png" alt="">
-            <div><img :src="store.Logo" alt=""></div>
+            <div><img :src="getImagePath(`../assets/images/${store.Logo}`)" alt=""></div>
             <div>
                 <ul v-for="li in store.navList">
                     <li>{{li}}</li>
