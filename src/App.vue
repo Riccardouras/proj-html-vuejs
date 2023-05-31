@@ -1,7 +1,9 @@
 <script>
-import AppHeader from './components/AppHeader.vue'
-import AppMain from './components/AppMain.vue'
-import AppFooter from './components/AppFooter.vue'
+import AppHeader from './components/AppHeader.vue';
+import AppMain from './components/AppMain.vue';
+import AppFooter from './components/AppFooter.vue';
+import { store } from './components/data/store.js';
+
 export default{
   components : {
     AppHeader,
@@ -10,12 +12,14 @@ export default{
   },
   data(){
     return{
+      store
     }
   }, 
   methods: {
    
   },
   created () {
+    console.log(this.store)
   }
 }
 </script>
