@@ -26,13 +26,13 @@ export default {
 <template>
     <main>
         <section class="section-margin">
-            <h1 class=" text-center marg-top-bottom">
+            <h1 style="font-size: 2.5rem;" class=" text-center marg-top-bottom">
                 OUR SERVICIES
             </h1>
             <h2 style="color: black;" class="text-center mb">We Make your child happy day after day</h2>
             <div class="flex container auto gap">
                 <div class="box">
-                    <h2 class="margins-h2"><b>Chess Education</b></h2>
+                    <h2 style="color: black;" class="margins-h2"><b>Chess Education</b></h2>
                     <h3 class="margins-h3">Popular education for your child and you</h3>
                     <p>Teachers and parents around the world know that chess is not a simply game. It is a great learning tool
                         that will help build your child's executive function skills.</p>
