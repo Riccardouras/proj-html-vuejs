@@ -72,7 +72,7 @@ export default{
                     <button class="btn btn-color">Enroll Now</button>
                     <button class="btn btn-opacity">Learn More</button>
                 </div>
-                <button class="absolute"> <font-awesome-icon style="color: FFCD18 ;" :icon="['fas', 'phone']" /></button>
+                <button class="absolute"> <font-awesome-icon style="color: #6C5A49 ;" :icon="['fas', 'phone']" /></button>
             </div>
         </section>
     </section>
