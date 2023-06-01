@@ -26,9 +26,9 @@ export default {
             <div>
                 <h3>Follow Us</h3>
                 <div class="flex gap-icons">
-                    <div><font-awesome-icon class="color-white" :icon="['fab', 'facebook-f']" /></div>
-                    <div><font-awesome-icon class="color-white" :icon="['fab', 'telegram']" /></div>
-                    <div><font-awesome-icon class="color-white" :icon="['fab', 'instagram']" /></div>
+                    <div class="bordered"><font-awesome-icon class="color-white" :icon="['fab', 'facebook-f']" /></div>
+                    <div class="bordered"><font-awesome-icon class="color-white" :icon="['fab', 'telegram']" /></div>
+                    <div class="bordered"><font-awesome-icon class="color-white" :icon="['fab', 'instagram']" /></div>
                 </div>
             </div>
         </div>
@@ -68,5 +68,11 @@ button{
 }
 span{
     margin-left: 5rem;
+}
+.bordered{
+    border: 1px solid white;
+    padding: 0.4rem;
+    height: 28px;
+    width: 28px;
 }
 </style>
