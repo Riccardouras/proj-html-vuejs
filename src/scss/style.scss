@@ -99,11 +99,25 @@ body{
 }
 .bg-yellow button{
   background-color: #ffcd18;
-  padding: 0.8rem 2rem;
+  padding: 0.8rem 3rem;
   border-radius: 5px;
   font-size: 1rem;
   border: 3px solid;
 }
 .gapp{
-  gap: 13rem;
+  gap: 7rem;
+}
+.sizing{
+  font-size: 3rem;
+  margin-left: -38px;
+}
+.sizingel{
+  font-size: 1.7rem;
+  margin-left: -38px;
+}
+.margin-cards-title{
+  margin-bottom: 34px;
+}
+.space-card-title{
+  margin-bottom: 46px;
 }

@@ -69,8 +69,8 @@ export default {
                 <img :src="getImagePath(`../assets/images/${el.img}`)" alt="">
             </div>
             <div>
-                <h2>{{ el.title }}</h2>
-                <p>{{ el.text }}</p>
+                <h2 class="sizing">{{ el.title }}</h2>
+                <p class="sizingel">{{ el.text }}</p>
             </div>
             <div>
                 <button>Learn More</button>
@@ -78,17 +78,19 @@ export default {
         </div>
     </section>
     <!-- cards -->
-    <section>
-        <div>
-            <h2>Courses</h2>
-            <p>To keep up with the constantly rising standars of play</p>
-            <div>
-                <div v-for="card in store.cards">
-                    <img :src="getImagePath(`../assets/images/${card.img}`)" alt="">
-                    <h3>{{ card.title }}</h3>
-                    <p>{{ card.text }}</p>
-                    <h3>{{ card.price }}</h3>
-                    <button>View More</button>
+    <section style="margin-top: 120px;">
+        <div class="space-card-title">
+            <h2 class="text-center margin-cards-title">Courses</h2>
+            <p class="text-center">To keep up with the constantly rising standars of play</p>
+            <div class="flex container auto">
+                <div  v-for="card in store.cards">
+                    <div>
+                        <img :src="getImagePath(`../assets/images/${card.img}`)" alt="">
+                        <h3>{{ card.title }}</h3>
+                        <p>{{ card.text }}</p>
+                        <h3>{{ card.price }}</h3>
+                        <button>View More</button>
+                    </div>
                 </div>
             </div>
             <button>View Other Courses</button>
