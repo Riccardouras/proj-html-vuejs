@@ -81,7 +81,7 @@ export default {
         <!-- cards -->
         <section style="margin-top: 120px;">
             <div class="">
-                <h2 class="text-center margin-cards-title">Courses</h2>
+                <h2 style="color: black;" class="text-center margin-cards-title font">Courses</h2>
                 <p class="text-center space-card-title">To keep up with the constantly rising standars of play</p>
                 <div class="flex container auto">
                     <div class="card" v-for="card in store.cards">
