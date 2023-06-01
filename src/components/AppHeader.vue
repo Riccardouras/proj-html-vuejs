@@ -27,14 +27,14 @@ export default{
             <section class="container auto"  >
                 <div class="flex justify-around pad-top">
                     <div class="ml">
-                        <font-awesome-icon class="icon" style="color: FFCD18 ;" :icon="['fas', 'location-dot',]" />
+                        <font-awesome-icon class="icon" style="color: #6C5A49;" :icon="['fas', 'location-dot',]" />
                         <span>
                             <b> 6767 Santa Monica Blvd, Los Angeles,CA 90038 </b>
                         </span>
                     </div>
                     <div class="flex justify-around">
                         <div class="gap">
-                            <font-awesome-icon class="icon" style="color: FFCD18 ;" :icon="['fas', 'phone',]" />
+                            <font-awesome-icon class="icon" style="color: #6C5A49 ;" :icon="['fas', 'phone',]" />
                             <span><b> Call Now 123-456-7890</b></span>
                         </div>
                         <div>
