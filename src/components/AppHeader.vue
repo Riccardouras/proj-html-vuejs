@@ -49,7 +49,7 @@ export default{
                 <div>
                     <ul>
                         <li v-for="(li, index) in store.navList">
-                            <a href="" :style="{ color: index === 0 ? '#FFCD18' : '#FFFFFF' }">{{li}}</a>
+                            <a href="" :style="{ color: index === 0 ? '#6C5A49' : '#FFFFFF' }">{{li}}</a>
                         </li>
                     </ul>
                 </div>
@@ -108,7 +108,7 @@ h1{
     font-weight: 5rem;
 }
 #title-diff-color{
-    color: #ffcd18 !important;
+    color: #6C5A49 !important;
 }
 
 li{
@@ -140,7 +140,7 @@ a{
     font-family: 'Lato', sans-serif;
 }
 .btn-yellow{
-    background-color: #ffcd18;
+    background-color: #6C5A49;
     border: none;
     border-radius: 30px;
     padding: 0 10px;
@@ -153,7 +153,7 @@ a{
  
 }
 .btn-color{
-    background-color: #ffcd18;
+    background-color: #6C5A49;
     border: none;
 }
 .btn-opacity{

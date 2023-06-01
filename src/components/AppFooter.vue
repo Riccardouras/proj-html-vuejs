@@ -20,7 +20,7 @@ export default {
 
 <template>
    <footer class="bg-footer" style="margin-top: 120px;">
-    <div class="flex container auto justify-around footer-marg">
+    <div class="flex container auto footer-marg">
         <div><img :src="getImagePath(`../assets/images/${store.Logo}`)" alt=""></div>
         <div >
             <div>
@@ -60,7 +60,7 @@ h3,h4,span{
     color: white;
 }
 button{
-    background-color: #ffcd18;
+    background-color: #6C5A49;
     padding: 0.8rem 2rem;
     border-radius: 5px;
     font-size: 1rem;

@@ -103,7 +103,7 @@ export default {
             <div class="container relative-2 flex gapper ">
                 <div>
                     <h1>TAKE THE
-                        <span class="absolute-2" style="color: #ffcd18;">
+                        <span class="absolute-2" style="color: #6C5A49;">
                             <h1>FIRST STEP</h1>
                         </span>
                     </h1>
@@ -131,7 +131,7 @@ export default {
         </section>
         <!-- news -->
         <section class="bg-section">
-            <div class="flex justify-around align-center">
+            <div class="flex justify-center align-center gappp">
                 <div>
                     <h1 class="font-s">Latest News</h1>
                     <hr>
