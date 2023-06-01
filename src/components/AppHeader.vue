@@ -56,7 +56,7 @@ export default{
             </nav>
         </header>
         <section class="flex">
-            <div class="container justify-start relative auto">
+            <div class="container justify-start relative auto pad">
                 <div>
                     <button class="btn-yellow">WELCOME</button>
                     <h1 class="dist relative">ACADEMIC CHESS <br> FOR
@@ -68,7 +68,7 @@ export default{
                         <p>We are dedicated to broadening and developing chess as art, <br> recreation, and a significant element of culture in Northen <br> California.</p>
                     </div>
                 </div>
-                <div class="marg-2  mb-bot">
+                <div class="marg-2">
                     <button class="btn btn-color">Enroll Now</button>
                     <button class="btn btn-opacity">Learn More</button>
                 </div>
@@ -200,4 +200,9 @@ p{
     top: 50%;
     left: 24%;
 }
+.pad{
+    padding-bottom: 120px;
+}
+    
+
 </style>
