@@ -107,6 +107,6 @@ export const store = reactive({
             img: "blog/mt-2236-blog-img2.jpg",
             text: "Methods of recruitment"
         }
-    ]
-    
+    ],
+    jumbotron : ["jumbotron/mt-2236-home-bg1.jpg"]
 })
