@@ -85,11 +85,13 @@ export const store = reactive({
         {
             id: "1",
             img: "events/mt-2236-home-img4.jpg",
+            title: "Grand summer tournament 2021",
             decription: "Join us for the Grand Summer Tournament 2021. Held every year on the first Sunday of the Summer,our Grand Summer Tournament chess masters and beginners from North Carolina. We have competitions for differente levels of chess mastery with amazing prizes awarded toeach level."
         },
         {
             id: "2",
             img: "events/mt-2236-home-img5.jpg",
+            title: "World chess day",
             decription: "Celebrated on July 20 every year, World Chess Day is one of the biggest events in our school. Be ready for fun tournaments and big prizes. Registration is obligatory!"
         }
 ],
