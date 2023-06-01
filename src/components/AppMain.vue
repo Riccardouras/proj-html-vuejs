@@ -1,7 +1,7 @@
 <script>
-import {store} from "./data/store";
+import { store } from "./data/store";
 export default {
-    props:{
+    props: {
         listIcon: Object,
         services: Object
     },
@@ -24,33 +24,34 @@ export default {
 </script>
 
 <template>
-    <section>
-        <h2>
+    <section class="section-margin">
+        <h1 class=" text-center marg-top-bottom">
             OUR SERVICIES
-        </h2>
-        <h3>We Make your child happy day after day</h3>
-        <div>
-            <div>
-                <h3><b>Chess Education</b></h3>
-                <h6>Popular education for your child and you</h6>
-                <p>Teachers and parents around the world know that chess is not a simply game. It is a great learning tool that will help build your child's executive function skills</p>
+        </h1>
+        <h2 class="text-center mb">We Make your child happy day after day</h2>
+        <div class="flex container auto gap">
+            <div class="box">
+                <h2 class="margins-h2"><b>Chess Education</b></h2>
+                <h3 class="margins-h3">Popular education for your child and you</h3>
+                <p>Teachers and parents around the world know that chess is not a simply game. It is a great learning tool
+                    that will help build your child's executive function skills.</p>
                 <div>
-                    <ul v-for="li in store.listIcon">
-                        <li>{{ li.text }}</li>
+                    <ul>
+                        <li v-for="li in store.listIcon">{{ li.text }}</li>
                     </ul>
                 </div>
                 <button>Learn More</button>
             </div>
-            <div v-for="service in store.services">
-                <div>
+            <div class="flex wrap boxed">
+                <div class="half halfh" v-for="service in store.services">
                     <div>
-                        <img :src="getImagePath(`../assets/images/${service.img}`)" :alt="service.id">
+                        <img class="img-size" :src="getImagePath(`../assets/images/${service.img}`)" :alt="service.id">
                     </div>
-                    <div>
-                        <h5>{{service.title}}</h5>
+                    <div class="margi-b">
+                        <h3>{{ service.title }}</h3>
                     </div>
-                    <div>
-                        <p>{{service.text}}</p>
+                    <div class="">
+                        <p>{{ service.text }}</p>
                     </div>
                 </div>
             </div>
@@ -58,16 +59,18 @@ export default {
     </section>
     <!-- flyer -->
     <section>
-        <div v-for="image in store.main">
-            <img :src="getImagePath(`../assets/images/${image}`)" alt="">
+        <div class="flex width">
+            <div v-for="image in store.main">
+                <img class="fit" :src="getImagePath(`../assets/images/${image}`)" alt="">
+            </div>
         </div>
-        <div v-for="el in store.flyer">
-            <div>
+        <div class="flex bg-yellow negative-m justify-center align-center gapp" v-for="el in store.flyer">
+            <div class="container">
                 <img :src="getImagePath(`../assets/images/${el.img}`)" alt="">
             </div>
             <div>
-                <h2>{{el.title}}</h2>
-                <p>{{el.text}}</p>
+                <h2>{{ el.title }}</h2>
+                <p>{{ el.text }}</p>
             </div>
             <div>
                 <button>Learn More</button>
@@ -82,21 +85,23 @@ export default {
             <div>
                 <div v-for="card in store.cards">
                     <img :src="getImagePath(`../assets/images/${card.img}`)" alt="">
-                    <h3>{{card.title}}</h3>
-                    <p>{{card.text}}</p>
-                    <h3>{{card.price}}</h3>
+                    <h3>{{ card.title }}</h3>
+                    <p>{{ card.text }}</p>
+                    <h3>{{ card.price }}</h3>
                     <button>View More</button>
                 </div>
-             </div>
-             <button>View Other Courses</button>
+            </div>
+            <button>View Other Courses</button>
         </div>
-      
+
     </section>
     <!-- second flyer -->
     <section>
         <div>
             <div>
-                <h1>Take the<span><h1>first step</h1></span></h1>
+                <h1>Take the<span>
+                        <h1>first step</h1>
+                    </span></h1>
                 <h2>The fascinating world of chess has its doors open for anyone</h2>
             </div>
             <div><button>View More</button></div>
@@ -111,8 +116,8 @@ export default {
                 <img :src="getImagePath(`../assets/images/${event.img}`)" alt="">
             </div>
             <div>
-                <h2>{{event.title}}</h2>
-                <p>{{event.description}}</p>
+                <h2>{{ event.title }}</h2>
+                <p>{{ event.description }}</p>
             </div>
             <div><button>Register</button></div>
         </div>
@@ -126,14 +131,16 @@ export default {
                 <button>View Other Posts</button>
             </div>
             <div>
-                <div v-for="el in store.news" >
+                <div v-for="el in store.news">
                     <img :src="getImagePath(`../assets/images/${el.img}`)" alt="">
-                    <h3>{{el.text}}</h3>
+                    <h3>{{ el.text }}</h3>
                 </div>
             </div>
         </div>
     </section>
 </template>
 
-<style scoped lang="scss"> 
-</style>
+<style scoped lang="scss"> li {
+     list-style-image: url(../assets/images/listicon/mt-2236-home-icon-bullet.png);
+     list-style-position: inside;
+ }</style>

@@ -44,7 +44,7 @@ export default{
                     
                 </div>
             </section>
-            <nav class="container flex justify-around  margin-top">
+            <nav class="container flex justify-around  margin-top auto">
                 <div><img :src="getImagePath(`../assets/images/${store.Logo}`)" alt=""></div>
                 <div>
                     <ul>
@@ -56,7 +56,7 @@ export default{
             </nav>
         </header>
         <section class="flex">
-            <div class="container justify-start relative">
+            <div class="container justify-start relative auto">
                 <div>
                     <button class="btn-yellow">WELCOME</button>
                     <h1 class="dist relative">ACADEMIC CHESS <br> FOR
@@ -89,7 +89,7 @@ header{
   opacity: 0.8;
 }
 .justify-start{
-    margin-left: 288px;
+    margin-left: 441px
 }
 .justify-around{
     justify-content: space-around;
@@ -97,12 +97,8 @@ header{
 .flex{
     display: flex;
 }
-.container{
-    max-width: 1923px;
-}
-.auto{
-    margin: 0 auto;
-}
+
+
 span{
     color: #ffffff;
 }
@@ -141,6 +137,7 @@ a{
     background-image: url(../assets/images/jumbotron/mt-2236-home-bg1.jpg);
     background-size: 100%;
     background-repeat: no-repeat; 
+    font-family: 'Lato', sans-serif;
 }
 .btn-yellow{
     background-color: #ffcd18;
@@ -192,7 +189,7 @@ p{
     position: absolute;
     position: absolute;
     top: 42%;
-    left: -66%;
+    left: -60%;
     padding: 1rem;
     font-size: 2rem;
     border-radius: 100%;
