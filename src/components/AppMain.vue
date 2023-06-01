@@ -36,7 +36,7 @@ export default {
                     <h3 class="margins-h3">Popular education for your child and you</h3>
                     <p>Teachers and parents around the world know that chess is not a simply game. It is a great learning tool
                         that will help build your child's executive function skills.</p>
-                    <div>
+                    <div style="margin-bottom: 40px;">
                         <ul>
                             <li v-for="li in store.listIcon">{{ li.text }}</li>
                         </ul>
