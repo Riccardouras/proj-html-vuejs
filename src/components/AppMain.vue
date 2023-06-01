@@ -24,20 +24,6 @@ export default {
 </script>
 
 <template>
-    <!-- head  -->
-    <section>
-        <div>
-            <button>WELCOME</button>
-            <h1>ACADEMIC CHESS FOR <span><h1>EVERYONE</h1></span></h1>
-            <p>We are dedicated to broadening and developing chess as art, recreation, and a significant element of culture in Northen California.</p>
-        </div>
-        <div>
-            <button>Enroll Now</button>
-            <button>Learn More</button>
-        </div>
-        <button></button>
-    </section>
-    <!-- jumbotron -->
     <section>
         <h2>
             OUR SERVICIES
@@ -149,5 +135,5 @@ export default {
     </section>
 </template>
 
-<style scoped> 
+<style scoped lang="scss"> 
 </style>

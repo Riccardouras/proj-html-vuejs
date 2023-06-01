@@ -26,10 +26,10 @@ export default{
 
 <template>
   <AppHeader/>
-  <AppMain/>
-  <AppFooter/>
+  <!-- <AppMain/> -->
+  <!-- <AppFooter/> -->
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 
 </style>

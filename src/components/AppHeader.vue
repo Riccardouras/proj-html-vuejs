@@ -24,24 +24,27 @@ export default{
 <template>
     <section id="bg-img">
         <header>
-            <section class="container"  >
+            <section class="container auto"  >
                 <div class="flex justify-around pad-top">
-                    <div>
-                        <font-awesome-icon style="color: FFCD18 ;" :icon="['fas', 'location-dot',]" /><span> 6767 Santa Monica Blvd, Los Angeles,CA 90038</span>
+                    <div class="ml">
+                        <font-awesome-icon class="icon" style="color: FFCD18 ;" :icon="['fas', 'location-dot',]" />
+                        <span>
+                            <b> 6767 Santa Monica Blvd, Los Angeles,CA 90038 </b>
+                        </span>
                     </div>
-                    <div class="flex justify-around gap">
-                        <div>
-                            <font-awesome-icon style="color: FFCD18 ;" :icon="['fas', 'phone',]" />
-                            <span> Call Now 123-456-7890</span>
+                    <div class="flex justify-around">
+                        <div class="gap">
+                            <font-awesome-icon class="icon" style="color: FFCD18 ;" :icon="['fas', 'phone',]" />
+                            <span><b> Call Now 123-456-7890</b></span>
                         </div>
                         <div>
-                            <button class="bg-white">Donate</button>
+                            <button class="btn-white"> <b> Donate </b></button>
                         </div>
                     </div>
                     
                 </div>
             </section>
-            <nav class="container flex justify-around gap margin-top">
+            <nav class="container flex justify-around  margin-top">
                 <div><img :src="getImagePath(`../assets/images/${store.Logo}`)" alt=""></div>
                 <div>
                     <ul>
@@ -53,26 +56,34 @@ export default{
             </nav>
         </header>
         <section class="flex">
-            <div class="container justify-start">
+            <div class="container justify-start relative">
                 <div>
                     <button class="btn-yellow">WELCOME</button>
-                    <h1 class="dist">ACADEMIC CHESS <br> FOR<span><h1 id="title-diff-color">EVERYONE</h1></span></h1>
+                    <h1 class="dist relative">ACADEMIC CHESS <br> FOR
+                        <span class="absolutes">
+                            <h1 id="title-diff-color">EVERYONE</h1>
+                        </span>
+                    </h1>
                     <div class="marg-2">
-                        <p>We are dedicated to broadening and developing chess as art, <br> recreation, and a significant element of culture in Northen California.</p>
+                        <p>We are dedicated to broadening and developing chess as art, <br> recreation, and a significant element of culture in Northen <br> California.</p>
                     </div>
                 </div>
-                <div class="marg-2">
+                <div class="marg-2  mb-bot">
                     <button class="btn btn-color">Enroll Now</button>
                     <button class="btn btn-opacity">Learn More</button>
                 </div>
-                <button></button>
+                <button class="absolute"> <font-awesome-icon style="color: FFCD18 ;" :icon="['fas', 'phone']" /></button>
             </div>
         </section>
     </section>
 </template>
 
 <style scoped lang="scss">
-
+.icon{
+    font-size: 0.8rem;
+    margin-bottom: 2px;
+    margin-right: 2px;
+}
 header{
   background-color: #11212E ;
   opacity: 0.8;
@@ -88,6 +99,8 @@ header{
 }
 .container{
     max-width: 1923px;
+}
+.auto{
     margin: 0 auto;
 }
 span{
@@ -95,6 +108,8 @@ span{
 }
 h1{
     color: #ffffff;
+    font-size: 5rem;
+    font-weight: 5rem;
 }
 #title-diff-color{
     color: #ffcd18 !important;
@@ -112,17 +127,19 @@ a{
 .margin_auto{
     margin: 0 auto !important;
 }
-
+.mb-bot{
+    margin-bottom: 270px;
+}
 .pad-top{
     padding-top: 20px;
 }
 .margin-top{
-    margin-top: 42px;
+    margin-top: 16px;
     padding-bottom: 22px;
 }
 #bg-img{
     background-image: url(../assets/images/jumbotron/mt-2236-home-bg1.jpg);
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat; 
 }
 .btn-yellow{
@@ -133,8 +150,9 @@ a{
     margin-top: 100px;
 }
 .btn{
-    padding: 0.8rem;
+    padding: 0.8rem 2rem;
     border-radius: 5px;
+    font-size: 1rem;
  
 }
 .btn-color{
@@ -147,6 +165,11 @@ a{
   color: #ffffff;
   margin-left: 20px;
 }
+.btn-white{
+    padding: 10px 50px;
+    border-radius: 0 5px 10px;
+    margin-right: 101px;
+}
 .dist{
     margin-top: 27px;
 }
@@ -155,5 +178,29 @@ p{
 }
 .marg-2{
     margin-top: 43px;
+}
+.ml{
+    margin-left: 89px;
+}
+.gap{
+    margin-right: 217px;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+    position: absolute;
+    top: 42%;
+    left: -66%;
+    padding: 1rem;
+    font-size: 2rem;
+    border-radius: 100%;
+    border: none;
+}
+.absolutes{
+    position: absolute;
+    top: 50%;
+    left: 24%;
 }
 </style>

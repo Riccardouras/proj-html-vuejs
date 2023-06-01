@@ -44,5 +44,5 @@ export default {
    </footer>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 </style>
